@@ -5,6 +5,8 @@
  */
 package system;
 
+import system.database.Conexion;
+
 /**
  *
  * @author Jorge Ernesto Gomez Giraldo
@@ -16,6 +18,10 @@ public class System {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Conexion conex= new Conexion();
+        //conex.getConnection();
+        conex.consultExpenses("SELECT * from expenses");
+        
     }
     
 }
