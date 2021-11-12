@@ -5,7 +5,8 @@
  */
 package system;
 
-import system.database.Conexion;
+import java.sql.SQLException;
+import system.controllers.ExpensesController;
 
 /**
  *
@@ -16,11 +17,10 @@ public class System {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         // TODO code application logic here
-        Conexion conex= new Conexion();
-        //conex.getConnection();
-        conex.consultExpenses("SELECT * from expenses");
+        ExpensesController data= new ExpensesController();
+        data.totalExpenses();
         
     }
     
