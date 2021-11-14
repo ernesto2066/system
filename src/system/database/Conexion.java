@@ -25,7 +25,7 @@ public class Conexion {
             Class.forName("org.sqlite.JDBC");
             conn= DriverManager.getConnection(strConexionDB);
             
-            System.out.println("Conexion a la basxe de datos exitosa");
+            System.out.println("Conexion a la base de datos exitosa");
         } catch (Exception e) {
             
             System.err.println("Error de conexion a la base de datos" +e);

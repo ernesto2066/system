@@ -21,6 +21,7 @@ public class System {
         // TODO code application logic here
         ExpensesController data= new ExpensesController();
         data.totalExpenses();
+        data.monthsExpenses();
         
     }
     
