@@ -18,6 +18,8 @@ git clone https://github.com/ernesto2066/system.git
 
 - La base de datos usada se encuentra en el directorio \Database, esta base de datos contiene los registros que consume la aplicacion para mostrar la información de la prueba.
 
+- Archivo main System.java, en este archivo se instancian los metodos principales de la prueba tecnica.
+
 # Otra forma usando netbeans
 
 - Si se tiene netbeans ide instalado se puede ubicar en el menu la opcion Team y con el endpoint del proyecto se puede clonar, tener presente que se deben cargar los archivos .jar del directorio \Libraries.
