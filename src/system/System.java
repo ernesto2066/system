@@ -18,10 +18,12 @@ public class System {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws SQLException {
-        // TODO code application logic here
+        // Instancia de los metodos del controlador
         ExpensesController data= new ExpensesController();
-        data.totalExpenses();
-        data.monthsExpenses();
+        data.totalExpenses();//Metodo con los totales de todos los empleados
+        data.monthsExpenses();//Metodo con los gastos por meses de cada empleado
+        data.suraExpenses();//Metodo con los totales que se deben asumir por sura 
+        data.employeeExpenses();//Metodo con los totales que se deben asumir los empleados de sura
         
     }
     

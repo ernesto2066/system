@@ -25,10 +25,10 @@ public class Conexion {
             Class.forName("org.sqlite.JDBC");
             conn= DriverManager.getConnection(strConexionDB);
             
-            System.out.println("Conexion a la base de datos exitosa");
-        } catch (Exception e) {
+            System.out.println("Conexión a la base de datos exitosa");
+        } catch (ClassNotFoundException | SQLException e) {
             
-            System.err.println("Error de conexion a la base de datos" +e);
+            System.err.println("Error de conexión a la base de datos" +e);
         }
         
     }
@@ -46,7 +46,7 @@ public class Conexion {
             
         } catch (Exception e) {
             
-            System.err.println("Error de conexion a la base de datos" +e);
+            System.err.println("Error de conexión a la base de datos" +e);
             return null;
         }
         
